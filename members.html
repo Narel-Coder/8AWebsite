@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8A Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(240, 255, 232);
+            text-align: center;
+        }
+        
+        .container1, .container2 {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1300px;
+        }
+        
+        .container1 {
+            min-height: 600px;
+        }
+        
+        .container2 {
+            min-height: 1200px;
+        }
+        
+        .navbar {
+            background-color: rgb(144, 75, 148) !important;
+            height: auto;
+            padding: 10px 0;
+        }
+        
+        .navbar-brand {
+            font-weight: bolder;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+        
+        .navbar-nav .nav-link {
+            margin: 0 5px;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+        }
+        
+        .card {
+            background-color: rgb(225, 255, 208) !important;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 18rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .card-img-top {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .section-title {
+            margin: 20px 0 15px;
+            font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+        }
+        
+        .logo-img {
+            width: clamp(40px, 10vw, 50px);
+            height: clamp(40px, 10vw, 50px);
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            .navbar-collapse {
+                background-color: rgb(144, 75, 148);
+                padding: 10px;
+                border-radius: 10px;
+            }
+            
+            .card {
+                max-width: 100%;
+            }
+            
+            .container1, .container2 {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container1 {
+                min-height: 500px;
+            }
+            
+            .container2 {
+                min-height: 1000px;
+            }
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        .bebas-neue-regular {
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+}
+    </style>
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <img src="8ALogo.png" alt="8A Logo" class="logo-img">
+      <a class="navbar-brand text-light">8Adventure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="#">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Memories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Top 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Achievements</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!--Structure Organization Class-->
+<h2 style="margin-top: 2%; font-size: clamp(1.5rem, 4vw, 2rem); font-family: 'Bebas Neue'">Welcome to 8A's website, created by Narel</h2>
+<hr style="width: 80%; margin: 10px auto; margin-bottom: 20px;">
+
+<!-- Class Leadership Section -->
+<div class="container1">
+  <h2 class="section-title">👨‍💼Class Leadership👩‍💼</h2>
+  
+  <!-- First row: Ketua Kelas and Wakil Ketua -->
+  <div class="row justify-content-center mb-4">
+    <!-- Narel -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Narel.jpeg" class="card-img-top" alt="Narel">
+        <div class="card-body">
+          <h5 class="card-title">Ketua Kelas</h5>
+          <p class="card-text">Narel Andrea Nareswara</p>
+          <a href="https://www.instagram.com/narelandrea._/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Atifa -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Atifa.jpeg" class="card-img-top" alt="Atifa">
+        <div class="card-body">
+          <h5 class="card-title">Wakil Ketua</h5>
+          <p class="card-text">Atifa Maulana Safir</p>
+          <a href="https://www.instagram.com/atifamaulanaa/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second row: Sekretaris and Bendahara -->
+  <div class="row justify-content-center">
+    <!-- Najla -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Najla.jpeg" class="card-img-top" alt="Najla">
+        <div class="card-body">
+          <h5 class="card-title">Sekretaris 1</h5>
+          <p class="card-text">Najla Raissa Ardell Anandita</p>
+          <a href="https://www.instagram.com/raissa_najla/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tabi -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Tabi.jpeg" class="card-img-top" alt="Tabi">
+        <div class="card-body">
+          <h5 class="card-title">Sekretaris 2</h5>
+          <p class="card-text">Tabina Inshira Alyandra</p>
+          <a href="https://www.instagram.com/tab_inshira/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shakyra -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Shakyra.jpeg" class="card-img-top" alt="Shakyra">
+        <div class="card-body">
+          <h5 class="card-title">Bendahara 1</h5>
+          <p class="card-text">Shakyra Alzena Islamy</p>
+          <a href="https://www.instagram.com/kyrawrszx/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Flo -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Flo.jpeg" class="card-img-top" alt="Flo">
+        <div class="card-body">
+          <h5 class="card-title">Bendahara 2</h5>
+          <p class="card-text">Florenza Aila Ramadhani</p>
+          <a href="https://www.instagram.com/flowenzaa/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Class Members Section -->
+<div class="container2">
+  <h3 class="section-title">👦Class Members👧</h3>
+  <div class="row justify-content-center">
+    <!-- Fahri -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Fahri.jpeg" class="card-img-top" alt="Fahri">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Achmad Fahri Zen</p>
+          <a href="https://www.instagram.com/inpomabaremel_/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Aldrin -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Aldrin.jpeg" class="card-img-top" alt="Aldrin">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Aldrin Marcel Rasyad Mukti</p>
+          <a href="https://www.instagram.com/aldrinmukti/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Alvaro -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Alvaro.jpeg" class="card-img-top" alt="Alvaro">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Alvaro Muhammad Aydin</p>
+          <a href="https://www.instagram.com/darwinnunez.supportgroup/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Air -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Air.jpeg" class="card-img-top" alt="Air">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Amerta Bhumi Putri Kumalasari</p>
+          <a href="#" class="btn btn-success">Tidak ada Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Atiqa -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Atiqa.jpeg" class="card-img-top" alt="Atiqa">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Atiqa Zhafira Ramadhani</p>
+          <a href="https://www.instagram.com/atiqa_zh4f1/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Azka -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Azka.jpeg" class="card-img-top" alt="Azka">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Azka Syarif Padantya</p>
+          <a href="https://www.instagram.com/azkasyarifpadantya/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bagas -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Bagas.jpeg" class="card-img-top" alt="Bagas">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Bagas Praditya Mahendra</p>
+          <a href="https://www.instagram.com/bagaspradty/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Karin -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Karin.jpeg" class="card-img-top" alt="Karin">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Karin Putry Aida Murdheni</p>
+          <a href="https://www.instagram.com/karinprtym.a/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mikhayla -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Mikhayla.jpeg" class="card-img-top" alt="Mikhayla">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Lavina Mikhayla Vanjiwara</p>
+          <a href="https://www.instagram.com/mikhaylalavinia/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- El -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="El.jpeg" class="card-img-top" alt="El">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Lighia Nacita Willy</p>
+          <a href="https://www.instagram.com/lighianacita/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Qeena -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Qeena.jpeg" class="card-img-top" alt="Qeena">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Shaqueena Athayaneru C.</p>
+          <a href="https://www.instagram.com/qie_ina/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Naeema -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Naeema.jpeg" class="card-img-top" alt="Naeema">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Naeemaputri Aadila Pramudita</p>
+          <a href="https://www.instagram.com/naeemaaadila/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Nayaka -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Nayaka.jpeg" class="card-img-top" alt="Nayaka">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Nayaka Putri Azzahra</p>
+          <a href="https://www.instagram.com/azzzhrrra/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Naiyira -->
+    <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="Naiyira.jpeg" class="card-img-top" alt="Naiyira">
+        <div class="card-body">
+          <h5 class="card-title">Class Member</h5>
+          <p class="card-text">Siti Naiyira Shiva</p>
+          <a href="https://www.instagram.com/nnaeii.sh/" class="btn btn-success">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
